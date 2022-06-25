@@ -1,0 +1,84 @@
+/*Slider Principal*/
+.img-baner .d-block{
+    height: 100vh;
+    object-position:center;
+    -o-object-position: 0rem;
+    object-fit: cover;
+     }
+.texts{
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin: auto;
+}
+.texts h3{  
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: Montserrat;
+
+}
+.texts p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: Montserrat;
+
+}
+.boton-personalizado-4 {    
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-left:40px;
+    padding-right:40px;
+    border-radius:35px;
+    margin-bottom: 50px;
+    width: 200px;
+    border:none; 
+    }
+    .boton-personalizado-4:hover{
+        background-color: #ffdd40;
+        color:#333333;
+    }
+    .boton-personalizado-4 a:hover{
+        color:#333333;
+    }
+
+    .boton-personalizado-4 a{
+        text-decoration: none;
+        color:#333333;
+        font-weight: 600;
+        font-family: Montserrat;
+    }
+    
+
+       /*Screen*/
+       @media screen and (max-width:  1370px) {
+                .texts h3{  
+                    text-align: center;
+                    font-size: 1.8rem;
+                }
+                .texts p{
+                    font-size: 1.2rem;
+                }
+      }
+
+
+
+    /*phones*/
+
+
+    @media screen and (max-width:390px) {
+        .boton-personalizado-4 {    
+            width: 200px;
+            }
+            .texts h3{  
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            .texts p{
+                font-size: 1rem;
+            } 
+    }

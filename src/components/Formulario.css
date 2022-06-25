@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300&family=Roboto&display=swap');
+
+.ContForm{
+    box-sizing: border-box;
+    font-family: Montserrat;
+
+    padding: 20px 0;
+    
+}
+
+main{ 
+    width: 70%;
+    margin: auto;
+
+    overflow: hidden;
+    
+}
+@media (max-width: 1409px){
+    main{ 
+        width: 80%;
+       
+        
+    }   
+}   
+    @media (max-width: 1245px){
+        main{ 
+            width: 90%;
+           
+            
+        }       
+}   
+
+.radioTitle{
+    padding-bottom: 5px;
+}
+
+.radioSelec1{
+    display: inline;
+    padding-right: 150px;
+    
+}
+.radioSelec2{
+    display: inline;
+}
+
+.botonSig{
+    border-radius: 50px;
+    background-color: black;
+    padding: 7px 70px;  
+    float: right;  
+}
+
+.as {
+    color: white;
+    text-decoration: none;
+}
+
+.as:link, .as:visited,  .as:hover, .as:active
+{
+    color: white;
+    text-decoration: none;
+}
+
+.botonVol{
+    border-radius: 50px;
+    background-color: white;
+    border: solid 3px black;
+    padding: 4px 70px;  
+}
+.av {
+    color: black;
+    text-decoration: none;
+}
+
+.av:link, .av:visited,  .av:hover, .av:active
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+[data-tooltip] {
+    position: relative;
+    z-index: 100 !important;
+}
+/* Positioning and visibility settings of the tooltip */
+[data-tooltip]::before,
+[data-tooltip]::after {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 5px); /* 5px is the size of the arrow */
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 0.3s;
+    will-change: transform;
+}
+/* The actual tooltip with a dynamic width */
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+
+    /*min-width: 50px;*/
+    /*max-width: 300px;*/
+    width: min-content;
+    height: min-content;
+    
+    
+    
+    padding: 5px 18px;
+    border-radius: 10px;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: var(--default-box-shadow);
+
+    color: #fff;
+    font-size: 0.75rem;
+    text-align: center;
+    white-space: pre-wrap;
+
+    transform: translate(-50%, -5px) scale(0.5);
+}
+/* Tooltip arrow */
+[data-tooltip]::after {
+    content: '';
+    border-style: solid;
+    border-width: 5px 5px 0 5px; /* CSS triangle */
+    border-color: rgba(50, 50, 50, 1) transparent transparent transparent;
+    transform-origin: top;   /* Orientation setting for the slide-down effect */
+    transition-duration: 0s; /* If the mouse leaves the element, the transition effects for the tooltip arrow are "turned off" */
+    transform: translateX(-50%) scaleY(0);
+}
+/* Tooltip becomes visible at hover */
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+/* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover::before {
+    transition-delay: 0.3s;
+    transform: translate(-50%, -5px) scale(1);
+}
+/* Arrow slide down effect only on mouseenter (NOT on mouseleave) */
+[data-tooltip]:hover::after {
+    transition-delay: 0.5s; /* Starting after the grow effect */
+    transition-duration: 0.2s;
+    transform: translateX(-50%) scaleY(1);
+}
+
+/* BOTTOM */
+[data-tooltip-location="bottom"]::before,
+[data-tooltip-location="bottom"]::after {
+    top: calc(100% + 10px);
+    bottom: auto;
+}
+[data-tooltip-location="bottom"]::before {
+    transform: translate(-50%, 5px) scale(0.5);
+}
+[data-tooltip-location="bottom"]:hover::before {
+    transform: translate(-50%, 5px) scale(1);
+}
+[data-tooltip-location="bottom"]::after {
+    transform-origin: bottom;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent rgba(50, 50, 50, 1) transparent;
+}

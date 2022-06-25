@@ -1,0 +1,143 @@
+.footerp{
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+    color: #adb5bd;
+    background-color:#19191B;
+    font-family: Montserrat;
+}
+.logoFooter{
+  filter: grayscale();
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+.footer-content p{
+    height: auto;
+    margin: 30px auto;
+    line-height: 28px;
+    font-size: 1rem;
+    color: #adb5bd;
+    width: 80%;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2.5rem 0;
+    padding: 0 20px;
+    
+}
+.socials li{
+    margin: 0 10px;
+
+}
+.socials a i{
+    text-decoration: none;
+    color: #adb5bd;
+    font-size: 2rem;
+    width: 20px;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+  font-weight: bold 500;
+    color: #ffdd40;
+}
+
+/*menu footer*/
+.footer-menu{
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.conte{
+    width: 60%;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #adb5bd;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    padding: 10px 20px;
+  }
+  .footer-menu ul li{
+  display: block;
+  margin: auto;
+  }
+.footer-menu ul li a{
+  text-decoration: none;
+  color: #adb5bd;
+}
+  .footer-menu .fa{
+  letter-spacing: 5px;
+  }
+
+/*footer footer*/
+  .footer-bottom{
+    border: none;
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    height: auto;
+    padding:10px;
+    position: absolute;
+    text-align: center;
+}
+.footer-bottom p{
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #adb5bd;
+    font-weight: 400;
+}
+.footer-bottom p a{
+  color:#adb5bd;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+@media (max-width:1500px) {
+
+  .conte{
+    width: 80%;
+ 
+  }
+}
+@media (max-width:1200px) {
+
+  .conte{
+    width: 90%;
+ 
+  }
+} 
+    @media (max-width:980px) {
+
+        .footer-menu ul li a .fa{
+          font-size: 1rem;
+        }
+        .socials a i{
+          font-size: 1.8rem;
+      }
+      .footer-menu ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+        .footer-menu{
+          line-height: 40px;
+        }
+        .footer-menu .fa{
+          padding-left: 10px;
+        }
+      }
+      
+
+  
+

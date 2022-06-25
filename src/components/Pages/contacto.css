@@ -1,0 +1,58 @@
+.Maps{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.formularioC{
+    padding-top: 80px;
+    font-family: Montserrat;
+}
+.tituloC{
+    color: #8c959e;
+    width: 70%;
+    margin: auto;
+    font-family: Montserrat;
+   
+}
+.tituloC h2{
+    color: rgb(27, 27, 27);
+    font-size: 1.5rem;
+    font-weight: 600;
+   
+}
+.ContForm{
+    color: #8c959e;
+    font-weight: 200;
+    font-size: 0.8rem;
+   
+}
+
+
+@media (max-width: 1409px){
+    .tituloC{
+        width: 80%;
+    }
+} 
+@media (max-width: 1245px){
+    .tituloC{
+        width: 85%;
+    }
+    .tituloC h2{
+        font-size: 1.2rem;
+    }
+} 
+@media (max-width: 950px){
+    .Maps{
+        width: 100%;
+    }
+} 
+@media (max-width:500px){
+    .tituloC h2{
+        font-size: 1rem;
+    }
+    .formularioC{
+        padding-top: 40px;
+    }
+} 
+ 

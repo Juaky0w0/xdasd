@@ -1,0 +1,60 @@
+@import url(FondoEmpresa.scss);
+@import url(FondoContact.scss);
+
+.container-title{
+  position: absolute;
+  margin: auto;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-sizing: border-box;
+  color: white;
+  font-family: Montserrat;
+}
+.container-title-services{
+  position: absolute;
+  margin: auto;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-sizing: border-box;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+.container-title-Contacto{
+  position: absolute;
+  margin: auto;
+  top: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-sizing: border-box;
+  color: white;
+  font-family: Montserrat;
+}
+.container-title-services h3{
+  color: black;
+}
+
+.title-contact{
+  font-family: Montserrat;
+  color: white;
+}
+/*body color*/
+.body-color{
+  background-color: #F4F4F4;
+
+}
+
+/*screm title services and contact*/
+    @media screen and (max-width:550px) {
+
+       .title-contact{
+        color: transparent;
+       }
+  }
+  
+

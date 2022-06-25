@@ -1,0 +1,106 @@
+.container-atention{
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.columns{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+
+}
+.column-one{
+    margin: 20px auto;
+    padding: 20px;
+    width: 250px;
+    overflow: hidden;
+
+    
+}
+.column-one h3{
+    font-size: 18px;
+    color:#6e7780;
+    font-weight: 500;
+    line-height: 25px;
+
+}
+.column-one p{
+    color:#8c959e;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+
+}
+.Atention{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.Clients{
+    text-align: center;
+}
+.Clients h2{
+    font-size: 1.5rem;
+    color:#6e7780;
+}
+
+
+@media screen and (max-width: 836px) {
+    .columns{
+        flex-wrap: wrap;
+    }
+    .column-one{
+        margin: -10px auto;
+
+    }
+    .Atention{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    
+}
+@media screen and (max-width:414px) {
+    .column-one h3{
+        font-size: 16px;
+
+    }
+    .column-one p{
+        font-size: 14px;
+    }
+    .column-one{
+        margin: -20px auto;
+
+    }
+    .Clients h2{
+
+        font-size: 1.2rem;
+    }
+    .Atention{
+        font-size: 8rem;
+        padding-bottom: 10px;
+        padding-top: 30px;
+        margin-right: 60px;
+
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+    .container-contact .d-block{
+        height: 300px;
+        object-position:center;
+        -o-object-position: 0rem;
+        object-fit: cover;
+         }
+    }
+    @media screen and (max-width:480px) {
+        .container-contact .d-block{
+            height: 226px;
+            object-position:center;
+            -o-object-position: 0rem;
+            object-fit: cover;
+             }
+        }
+    

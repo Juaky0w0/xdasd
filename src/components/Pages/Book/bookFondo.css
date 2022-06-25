@@ -1,0 +1,85 @@
+.container-book{
+box-sizing: content-box;
+height: auto;
+position: relative;
+
+}
+
+.container-title-book{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Montserrat;
+    position: absolute;
+    z-index: 100;
+    margin: auto;
+    padding-left: 18%;
+    top: 12%;
+    width: 100%;
+  
+  }
+  .raclamo{
+    position: relative;
+  }
+
+  .title-book{
+    color:#171A20;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  .fech{
+    color: #171A20;
+  }
+  .texto-f{
+    color: #6F7073;
+    font-size: 0.8rem;
+  }
+  .texto-l{
+    color:#171A20;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  .texto-w{
+    color: #6F7073;
+    font-size: 0.8rem;;
+  }
+
+  @media screen and (max-width:1500px) {
+    .container-book .d-block{
+        height: 350px;
+        object-position:center;
+        -o-object-position: 0rem;
+        object-fit: cover;
+         }
+    }
+    @media screen and (max-width:950px) {
+      .container-title-book{
+        padding-left: 15%;
+      
+      }
+        }
+        @media screen and (max-width:640px) {
+          .container-title-book{ 
+            padding-left: 10%;
+          }
+            }
+         @media screen and (max-width:520px) {
+          .container-title-book{
+            position: relative;
+           padding: 5%;
+          }
+          .container-book .d-block{
+            height: 250px;
+            object-position:right;
+            -o-object-position: 0rem;
+            object-fit: cover;
+             }
+             .title-book{
+              color:#171A20;
+              padding-bottom: 20px;
+              font-size: 1.2rem;
+            }
+        }
+       
+    
+    

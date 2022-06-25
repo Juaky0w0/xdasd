@@ -1,0 +1,16 @@
+
+.contenedorPrin{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 80px;
+}
+.containerMarcas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  margin: 20px; 
+  @media (max-width: 1200px){
+    grid-template-columns: 1rf 1fr;
+}
+};
+   

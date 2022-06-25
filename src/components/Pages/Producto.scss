@@ -1,0 +1,103 @@
+@import url(contador.scss);
+ 
+ /*Contenido Marcas*/
+  .marcas{
+    height: 140px;
+    text-align: center;
+    padding: 120px;
+    font-family: Montserrat;
+  }
+  .marcas >h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #495057;
+
+  }
+  .contenido{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin: auto;
+
+  }
+.container-boto{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 210px;
+padding: 100px 0px;
+}
+.boton-personalizado-contact {    
+  padding-top:8px;
+  padding-bottom:8px;
+  padding-left:40px;
+  padding-right:40px;
+  border-radius:35px;
+  font-weight: 500;
+  font-size: 0.7rem;
+  font-family: Montserrat;
+  }
+  .boton-personalizado-contact:hover{
+      background-color: #ffdd40;
+      color:#333333;
+  }
+  .boton-personalizado-contact a{
+      text-decoration: none;
+      color:#333333;
+      font-weight: 600;
+  }
+.carousel-control-next-icon {
+  background-image: none;
+}
+.carousel-control-prev-icon {
+  background-image: none;
+}
+.products{
+  font-family: Montserrat;
+}
+  .products h2{
+    color: #495057;
+    padding: 50px;
+    margin: auto;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  /*media*/
+  @media screen and (max-width: 820px) {
+    .products h2{
+      padding: 40px;
+      text-align: center;
+      font-size: 1.3rem;
+      }
+  }
+  @media screen and (max-width: 544px) {
+    .boton-personalizado-contact {    
+      font-size: 0.8rem;
+      padding-top:5px;
+      padding-bottom:5px;
+      padding-left:30px;
+      padding-right:30px;
+      border-radius:35px;
+      width: 200px;
+      
+      }
+  }
+   
+  @media screen and (max-width: 480px) {
+    .products h2{
+    padding: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+    }
+    .marcas >h2{
+      height: 30px;
+      font-size: 20px;
+    }
+    .marcas{
+     height: 90px;
+     padding: 30px;
+    }
+  }
